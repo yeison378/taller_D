@@ -74,12 +74,14 @@ public abstract class Passenger {
             if(a.getPassenger().equals(Passenger.this))cont++;
 
         }
+
+/*        for (Ticket a: tickets){
+            if(a.getPassenger().equals(Passenger.this))cont++;
+
+        }*/
         if(cont == 1){
             tickets.add(new Ticket(fly,Passenger.this,shor));
-            System.out.println("AÑADIDO "+tickets.size());
-            for(Ticket j: tickets){
-                System.out.println(j.getWeight());
-            }
+
             return true;
         }else{
             return false;
@@ -95,7 +97,7 @@ public abstract class Passenger {
         }
         if(cont == 1){
             tickets.add(new Ticket(fly,Passenger.this,shor,flo));
-            System.out.println("AÑADIDO");
+//            System.out.println("AÑADIDO");
             return true;
         }else{
             return false;

@@ -15,9 +15,11 @@ public class Registered extends Passenger{
 
     @Override
     public double getTicketCost() {
-        double cost = tickets.get(tickets.size() - 1).getFly().getTarget().getValueTicket() - (tickets.get(tickets.size() - 1).getFly().getTarget().getValueTicket() * (discount/100));
+        double valor =tickets.get(tickets.size() - 1).getFly().getTarget().getValueTicket();
+        System.out.println("valor "+valor);
+        double cost = valor - (valor * ((double)discount/100));
         if (tickets.get(tickets.size() - 1).getFly().getAirplane().getYear() > 10) {
-            cost += tickets.get(tickets.size() - 1).getFly().getTarget().getValueTicket() - (tickets.get(tickets.size() - 1).getFly().getTarget().getValueTicket() * 0.1);
+            cost += valor - (valor * 0.1);
         }
         cost += calcOvercrowed();
         return cost;
