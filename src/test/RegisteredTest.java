@@ -1,34 +1,36 @@
 package test;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class RegisteredTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getTicketCost() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getMiles() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void setMiles() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getDiscount() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void setDiscount() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getDateRegister() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void setDateRegister() {
     }
 }
